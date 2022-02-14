@@ -4,8 +4,13 @@ import './App.css';
 
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
+import reducer, { initialState } from '../reducers'
+import {} from '../actions'
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState)
+
+  
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
